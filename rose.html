@@ -16,6 +16,84 @@
     </div>
     <h1>Welcome to Rose Page</h1>
     <style>
+        body {
+      text-align: center;
+      font-family: sans-serif;
+      padding-top: 50px;
+      margin: 0;
+      height: 100vh;
+      background-color: #f9f9f9;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: #c1447c;
+    }
+
+    .ball {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #ff6347;
+      animation: moveBall 5s infinite ease-in-out;
+    }
+
+    .ball:nth-child(1) {
+      background-color: #ff6347;
+      animation-delay: 0s;
+    }
+
+    .ball:nth-child(2) {
+      background-color: #32cd32;
+      animation-delay: 1s;
+    }
+
+    .ball:nth-child(3) {
+      background-color: #1e90ff;
+      animation-delay: 2s;
+    }
+
+    .ball:nth-child(4) {
+      background-color: #ff1493;
+      animation-delay: 3s;
+    }
+
+    @keyframes moveBall {
+      0% {
+        transform: translate(0, 0);
+      }
+      25% {
+        transform: translate(200px, 0);
+      }
+      50% {
+        transform: translate(200px, 200px);
+      }
+      75% {
+        transform: translate(0, 200px);
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Rose Page</h1>
+
+  <div class="ball"></div>
+  <div class="ball"></div>
+  <div class="ball"></div>
+  <div class="ball"></div>
+
+  
+
+  
+</body>
+</html>
+
         
     
 
